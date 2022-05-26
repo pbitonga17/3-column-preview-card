@@ -15,6 +15,14 @@ body {
     display: grid;
     place-items: center;
 }
+@media screen and (min-width: 700px) {
+    .container {
+        display: flex;
+        max-width: 80rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
 h2 {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 3rem;
@@ -26,6 +34,11 @@ p {
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 2.2rem;
 }
+@media screen and (min-width: 700px) {
+    p {
+        font-size: 1.3rem;
+    }
+}
 /**** BUTTON ****/
 .sedans a {
     font-family: 'Lexend Deca', sans-serif;
@@ -36,7 +49,7 @@ p {
     border: 1px solid;
     padding: 1.5rem;
     border-radius: 25px;
-    width: 12rem;
+    width: 10rem;
     text-align: center;
 }
 .suvs a {
@@ -48,7 +61,7 @@ p {
     border: 1px solid;
     padding: 1.5rem;
     border-radius: 25px;
-    width: 12rem;
+    width: 10rem;
     text-align: center;
 }
 .luxury a {
@@ -58,7 +71,7 @@ p {
     background-color: white;
     color: hsl(179, 100%, 13%);
     padding: 1.5rem;
-    width: 12rem;
+    width: 10rem;
     border: 1px solid;
     border-radius: 25px;
     text-align: center;
@@ -81,7 +94,11 @@ p {
 img {
     width: 50px;
 }
-
+@media screen and (min-width: 700px) {
+    a {
+        margin-top: 4rem;
+    }
+}
 /**** SEDAN ****/
 .sedans {
     background-color: hsl(31, 77%, 52%);
@@ -90,8 +107,14 @@ img {
     gap: 3rem;
     padding: 3rem;
     position: relative;
-    min-width: 100%;
+    width: 100%;
     border-radius: 10px 10px 0 0;
+}
+@media screen and (min-width: 700px) {
+    .sedans {
+        border-radius: 10px 0 0 10px;
+        padding: 3rem 4rem;
+    }
 }
 /**** SUVS ****/
 .suvs {
@@ -103,6 +126,11 @@ img {
     position: relative;
     width: 100%;
 }
+@media screen and (min-width: 700px) {
+    .suvs {
+        padding: 3rem 4rem;
+    }
+}
 /**** LUXURY ****/
 .luxury {
     background-color: hsl(179, 100%, 13%);
@@ -113,4 +141,10 @@ img {
     position: relative;
     width: 100%;
     border-radius: 0 0 10px 10px;
+}
+@media screen and (min-width: 700px) {
+    .luxury {
+        border-radius: 0 10px 10px 0;
+        padding: 3rem 4rem;
+    }
 }
